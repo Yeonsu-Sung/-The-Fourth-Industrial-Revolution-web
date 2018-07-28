@@ -3,6 +3,52 @@
   <title>The Fourth Industrial Revolution</title>
   <meta charset="utf-8">
 
+  <style>
+    body {
+      margin: 0;
+    }
+    a {
+      color: pink;
+      text-decoration: none;
+    }
+    h1 {
+      font-size: 30px;
+      text-align: center;
+      border-bottom: 1px solid gray;
+      margin: 0;
+      padding: 20px;
+    }
+    ol {
+      border-right: 1px solid gray;
+      width: 200px;
+      margin: 0;
+      padding: 33px;
+    }
+    #grid1 {
+      display: grid;
+      grid-template-columns: 250px 1fr;
+    }
+    #grid1 ol {
+      padding-left: 33px;
+    }
+    #grid1 #article1 {
+      padding: 37px;
+      padding-top: 9px;
+    }
+    /*screen width < 880px*/
+    @media(max-width:880px) {
+      #grid1 {
+        display:block;
+      }
+      ol {
+        border-right: none;
+      }
+      h1 {;
+        border-bottom: none;
+      }
+    }
+  </style>
+
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122977074-1"></script>
   <script>
@@ -16,48 +62,53 @@
 
 <body>
 <h1><a href="index.html">The Fourth Industrial Revolution</a></h1>
-  <ol>
-    <li><a href="1.html">Block Chain</a></li>
-    <li><a href="2.html">Artificial Intelligence(AI)</a></li>
-    <li><a href="3.html">Big Data</a></li>
-  </ol>
-  <h2>Block Chain</h2>
-  <p>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/SSo_EIwHSd4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-  </p>
-  <p><a href="https://terms.naver.com/entry.nhn?docId=3586111&cid=59277&categoryId=59283"
-    target="_blank" title="Block Chain specification">‘블록체인(Block Chain)’</a>
-     기술에서 블록(Block)에는 일정 시간 동안 확정된 거래 내역이 담긴다.
-    온라인에서 거래 내용이 담긴 블록이 형성되는 것이다.
-    거래 내역을 결정하는 주체는 사용자다.
-    이 블록은 네트워크에 있는 모든 참여자에게 전송된다.
-    참여자들은 해당 거래의 타당성 여부를 확인한다.
-    승인된 블록만이 기존 블록체인에 연결되면서 송금이 이루어진다.
-    신용 기반이 아니다.
-    시스템으로 네트워크를 구성, <strong>제3자가 거래를 보증하지 않고도</strong>
-    <u>거래 당사자끼리 가치를 교환할 수 있다</u>는 것이 블록체인 구상이다.</p>
+ <div id="grid1">
+      <ol>
+        <li><a href="1.html">Block Chain</a></li>
+        <li><a href="2.html">Artificial Intelligence(AI)</a></li>
+        <li><a href="3.html">Big Data</a></li>
+      </ol>
 
-  <p style="margin-top:45px;">
-    비트코인 기술을 처음 고안한 사람은 ‘사토시나카모토’라는 개발자다.
-    비트코인은 생긴 지 5년 만에 시가총액으로 세계 100대 화폐 안에 들어갈 정도로 성장했다.
-    그는 ‘비트코인: P2P 전자화폐 시스템’이라는 논문에서 비트코인을 전적으로 거래 당사자 사이에서만 오가는 전자화폐로 정의했다.
-    P2P(Peer to Peer) 네트워크를 이용해 이중 지불을 막아 준다는 것이다.
-    즉, P2P 네트워크를 통해 이중 지불을 막는 데 쓰이는 기술이 바로 블록체인이다.</p>
+      <div id="article1">
+          <h2>Block Chain</h2>
+          <p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/SSo_EIwHSd4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </p>
+          <p><a href="https://terms.naver.com/entry.nhn?docId=3586111&cid=59277&categoryId=59283"
+            target="_blank" title="Block Chain specification">‘블록체인(Block Chain)’</a>
+             기술에서 블록(Block)에는 일정 시간 동안 확정된 거래 내역이 담긴다.
+            온라인에서 거래 내용이 담긴 블록이 형성되는 것이다.
+            거래 내역을 결정하는 주체는 사용자다.
+            이 블록은 네트워크에 있는 모든 참여자에게 전송된다.
+            참여자들은 해당 거래의 타당성 여부를 확인한다.
+            승인된 블록만이 기존 블록체인에 연결되면서 송금이 이루어진다.
+            신용 기반이 아니다.
+            시스템으로 네트워크를 구성, <strong>제3자가 거래를 보증하지 않고도</strong>
+            <u>거래 당사자끼리 가치를 교환할 수 있다</u>는 것이 블록체인 구상이다.</p>
 
-  <p>
-    <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3f6e5055d9ad1d603fd364c11823d026&auto=format&fit=crop&w=1052&q=80" width="400">
-  </p>
+          <p style="margin-top:45px;">
+            비트코인 기술을 처음 고안한 사람은 ‘사토시나카모토’라는 개발자다.
+            비트코인은 생긴 지 5년 만에 시가총액으로 세계 100대 화폐 안에 들어갈 정도로 성장했다.
+            그는 ‘비트코인: P2P 전자화폐 시스템’이라는 논문에서 비트코인을 전적으로 거래 당사자 사이에서만 오가는 전자화폐로 정의했다.
+            P2P(Peer to Peer) 네트워크를 이용해 이중 지불을 막아 준다는 것이다.
+            즉, P2P 네트워크를 통해 이중 지불을 막는 데 쓰이는 기술이 바로 블록체인이다.</p>
 
-  <p>비트코인은 특정 관리자나 주인이 없다.
-    P2P 방식으로 작동하기 때문이다.
-    P2P는 개인 간 거래를 의미한다.
-    인터넷으로 다른 사용자 컴퓨터에 접속해 파일을 교환·공유할 수 있는 서비스다.
-    비트코인은 개인이나 회사가 아닌 여러 이용자 컴퓨터에 분산 저장된다.
-    비트코인에서 10분에 한번씩 만드는 거래 내역 묶음이 ‘블록’이다.
-    즉 블록체인은 비트코인의 거래 기록을 저장한 거래장부다.
-    데이터베이스(DB)로 이해하면 쉽다.
-    거래장부를 공개하고 분산해 관리한다는 의미에서 ‘공공 거래장부’나 ‘분산 거래장부(Distributed Ledgers)’로도 불린다.
-  </p>
+          <p>
+            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3f6e5055d9ad1d603fd364c11823d026&auto=format&fit=crop&w=1052&q=80" width="400">
+          </p>
+
+          <p>비트코인은 특정 관리자나 주인이 없다.
+            P2P 방식으로 작동하기 때문이다.
+            P2P는 개인 간 거래를 의미한다.
+            인터넷으로 다른 사용자 컴퓨터에 접속해 파일을 교환·공유할 수 있는 서비스다.
+            비트코인은 개인이나 회사가 아닌 여러 이용자 컴퓨터에 분산 저장된다.
+            비트코인에서 10분에 한번씩 만드는 거래 내역 묶음이 ‘블록’이다.
+            즉 블록체인은 비트코인의 거래 기록을 저장한 거래장부다.
+            데이터베이스(DB)로 이해하면 쉽다.
+            거래장부를 공개하고 분산해 관리한다는 의미에서 ‘공공 거래장부’나 ‘분산 거래장부(Distributed Ledgers)’로도 불린다.
+          </p>
+        </div>
+      </div>
 
   <p>
     <div id="disqus_thread"></div>
